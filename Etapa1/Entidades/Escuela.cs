@@ -24,9 +24,19 @@ namespace CoreEscuela.Entidades
             this.nombre = nombre;
             AñoDeCreacion = año;
         }*/
+        
         //se llama igualacion por tuplas
         public Escuela(string nombre, int año) =>(Nombre, AñoDeCreacion) =
         (nombre,año);
+
+        public Escuela(string nombre, int año, TiposEscuela tipos,
+                        string pais="", string ciudad="")
+        {
+            //asignacion por tuplas
+            (Nombre, AñoDeCreacion) = (nombre,año);
+            Pais = pais;
+            Ciudad = ciudad;
+        }
 
         public override string ToString()
         {
