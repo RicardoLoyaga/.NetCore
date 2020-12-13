@@ -1,0 +1,15 @@
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/Etapa1.deps.json
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/Etapa1.runtimeconfig.json
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/Etapa1.runtimeconfig.dev.json
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/Etapa1.dll
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/ref/Etapa1.dll
+/Users/bryan/fundamentosCSharp/Etapa1/bin/Debug/net5.0/Etapa1.pdb
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.csprojAssemblyReference.cache
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.AssemblyInfoInputs.cache
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.AssemblyInfo.cs
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.csproj.CoreCompileInputs.cache
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.dll
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/ref/Etapa1.dll
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.pdb
+/Users/bryan/fundamentosCSharp/Etapa1/obj/Debug/net5.0/Etapa1.genruntimeconfig.cache
