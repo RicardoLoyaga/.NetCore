@@ -1,0 +1,15 @@
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/fundamentosCSharp.deps.json
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/fundamentosCSharp.runtimeconfig.json
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/fundamentosCSharp.runtimeconfig.dev.json
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/fundamentosCSharp.dll
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/ref/fundamentosCSharp.dll
+/Users/bryan/fundamentosCSharp/bin/Debug/net5.0/fundamentosCSharp.pdb
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.csprojAssemblyReference.cache
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.AssemblyInfoInputs.cache
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.AssemblyInfo.cs
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.csproj.CoreCompileInputs.cache
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.dll
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/ref/fundamentosCSharp.dll
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.pdb
+/Users/bryan/fundamentosCSharp/obj/Debug/net5.0/fundamentosCSharp.genruntimeconfig.cache

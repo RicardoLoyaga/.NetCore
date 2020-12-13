@@ -1,0 +1,15 @@
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/escuela.deps.json
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/escuela.runtimeconfig.json
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/escuela.runtimeconfig.dev.json
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/escuela.dll
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/ref/escuela.dll
+/Users/bryan/fundamentosCSharp/escuela/bin/Debug/net5.0/escuela.pdb
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.csprojAssemblyReference.cache
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.AssemblyInfoInputs.cache
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.AssemblyInfo.cs
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.csproj.CoreCompileInputs.cache
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.dll
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/ref/escuela.dll
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.pdb
+/Users/bryan/fundamentosCSharp/escuela/obj/Debug/net5.0/escuela.genruntimeconfig.cache
