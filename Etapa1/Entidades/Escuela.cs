@@ -18,13 +18,15 @@ namespace CoreEscuela.Entidades
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela{get;set;}
 
+        public Curso[] Cursos { get; set; }
+
         //creamos los constructores
         /*public Escuela(string nombre, int año)
         {
             this.nombre = nombre;
             AñoDeCreacion = año;
         }*/
-        
+
         //se llama igualacion por tuplas
         public Escuela(string nombre, int año) =>(Nombre, AñoDeCreacion) =
         (nombre,año);
