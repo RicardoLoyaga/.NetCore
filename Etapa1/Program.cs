@@ -27,19 +27,14 @@ namespace Etapa1
                 new Curso() { Nombre = "501", Jornada = TiposJornada.Mañana },
                 new Curso   { Nombre = "502", Jornada = TiposJornada.Tarde }
             };
-            //Curso tmp = new Curso{Nombre = "101 Vacacional", Jornada = TiposJornada.Noche}
-            //los cursos que tengo mas otra coleccion que decidi agregar
-            escuela.Cursos.AddRange(otraColeccion);
-            //escuela.Cursos.Add(tmp);
-            //eliminar toda la coleccion
-            //otraColeccion.Clear();
-            //remover algunos miembros de la coleccion
-            //escuela.Cursos.Remove(tmp);
             /*
-            //un delegado especifica que parametros de entrada y salida debe tener
-            Predicate<Curso> miAlgoritmo = Predicado;
-            //remover cuando no se cual
-            escuela.Cursos.RemoveAll(Predicado);*/
+            escuela.Cursos.AddRange(otraColeccion);
+            
+            escuela.Cursos.RemoveAll(delegate(Curso cur){
+                return cur.Nombre == "301";
+            });
+            escuela.Cursos.RemoveAll((cur)=>cur.Nombre == "501");
+            */
             ImprimirCursosEscuela(escuela);
 
         }
@@ -49,6 +44,7 @@ namespace Etapa1
             return curobj.Nombre == "301";
         }
 
+        ///comentarios de los metodos
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
             WriteLine("---------------------");
