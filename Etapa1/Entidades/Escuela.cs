@@ -1,4 +1,6 @@
 //creamos espacio de nombres
+using System.Collections.Generic;
+
 namespace CoreEscuela.Entidades
 {
     class Escuela
@@ -18,7 +20,7 @@ namespace CoreEscuela.Entidades
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela{get;set;}
 
-        public Curso[] Cursos { get; set; }
+        public List<Curso> Cursos { get; set; }
 
         //creamos los constructores
         /*public Escuela(string nombre, int año)

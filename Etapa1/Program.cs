@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
 using static System.Console;
 
@@ -12,33 +13,40 @@ namespace Etapa1
             ciudad:"Quito");
             escuela.Pais = "Ecuador";
 
-            /*var arregloCursos = new Curso[3]{
-                new Curso() { Nombre = "101" },
-                new Curso() { Nombre = "201" },
-                new Curso   { Nombre = "301" }
-            };*/
-
-            escuela.Cursos = new Curso[] {
-                new Curso() { Nombre = "101" },
-                new Curso() { Nombre = "201" },
-                new Curso   { Nombre = "301" }
+            escuela.Cursos = new List<Curso>(){
+                new Curso() { Nombre = "101", Jornada = TiposJornada.Mañana },
+                new Curso() { Nombre = "201", Jornada = TiposJornada.Mañana },
+                new Curso   { Nombre = "301", Jornada = TiposJornada.Mañana }
             };
 
+            escuela.Cursos.Add(new Curso(){Nombre="102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso(){Nombre="202", Jornada = TiposJornada.Tarde });
+
+            var otraColeccion = new List<Curso>(){
+                new Curso() { Nombre = "401", Jornada = TiposJornada.Mañana },
+                new Curso() { Nombre = "501", Jornada = TiposJornada.Mañana },
+                new Curso   { Nombre = "502", Jornada = TiposJornada.Tarde }
+            };
+            //Curso tmp = new Curso{Nombre = "101 Vacacional", Jornada = TiposJornada.Noche}
+            //los cursos que tengo mas otra coleccion que decidi agregar
+            escuela.Cursos.AddRange(otraColeccion);
+            //escuela.Cursos.Add(tmp);
+            //eliminar toda la coleccion
+            //otraColeccion.Clear();
+            //remover algunos miembros de la coleccion
+            //escuela.Cursos.Remove(tmp);
+            /*
+            //un delegado especifica que parametros de entrada y salida debe tener
+            Predicate<Curso> miAlgoritmo = Predicado;
+            //remover cuando no se cual
+            escuela.Cursos.RemoveAll(Predicado);*/
             ImprimirCursosEscuela(escuela);
 
-            /*Console.WriteLine(escuela);
-            System.Console.WriteLine("==============");
-            /*Console.WriteLine(curso1.Nombre + " , "+curso1.UniqueId);
-            Console.WriteLine($"{curso2.Nombre} , {curso2.UniqueId}");
-            Console.WriteLine(curso3);
-            //imprimir array
-            ImprimirCursosWhile(arregloCursos);
-            System.Console.WriteLine("==============");
-            ImprimirCursosDoWhile(arregloCursos);
-            System.Console.WriteLine("==============");
-            ImprimirCursosFor(arregloCursos);
-            System.Console.WriteLine("==============");
-            ImprimirCursosForEach(arregloCursos);*/
+        }
+
+        private static bool Predicado(Curso curobj)
+        {
+            return curobj.Nombre == "301";
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)
