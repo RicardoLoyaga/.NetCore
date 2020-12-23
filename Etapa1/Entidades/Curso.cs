@@ -1,17 +1,22 @@
 using System;
+using System.Collections.Generic;
+using CoreEscuela.Util;
 
 namespace CoreEscuela.Entidades
 {
-    public class Curso
+    public class Curso: ObjetoEscuelaBase, ILugar
     {
-        public string UniqueId { get; private set; }
-        public string Nombre { get; set; }
         public TiposJornada Jornada { get; set; }
-        public Curso()
-        {
-            //creamos el id automatico
-            UniqueId = Guid.NewGuid().ToString();
-        }
+        public List<Asignatura> Asignaturas{ get; set; }
+        public List<Alumno> Alumnos { get; set; }
 
+        public string Dirección { get; set; }
+
+        public void LimpiarLugar()
+        {
+            Printer.DrawLine();
+            Console.WriteLine("Limpiando establecimiento...");
+            Console.WriteLine($"Curso {Nombre} está limpio");
+        }
     }
 }

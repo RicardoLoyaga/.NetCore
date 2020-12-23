@@ -1,23 +1,18 @@
 //creamos espacio de nombres
+using System;
 using System.Collections.Generic;
+using CoreEscuela.Util;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela
+    public class Escuela: ObjetoEscuelaBase, ILugar
     {
-        string nombre;
-        //lo encapsulamos en propiedades
-        public string Nombre 
-        { 
-            //cuando alguien pregunte por el nombre (devuelvo la variable)
-            get{return nombre;} 
-            //cuando alguien quiera asignar valor, le asignamos
-            set{nombre = value;}
-        }
-
         public int AñoDeCreacion{get;set;}
         public string Pais { get; set; }
         public string Ciudad { get; set; }
+
+        public string Dirección { get; set; }
+
         public TiposEscuela TipoEscuela{get;set;}
 
         public List<Curso> Cursos { get; set; }
@@ -47,5 +42,15 @@ namespace CoreEscuela.Entidades
             return $"Nombre: {Nombre}, Tipo: {TipoEscuela} \n Pais: {Pais}, Ciudad: {Ciudad}";
         }
 
+        public void LimpiarLugar()
+        {
+            Printer.DrawLine();
+            Console.WriteLine("Limpiando Escuela...");
+            foreach (var curso in Cursos)
+            {
+                curso.LimpiarLugar();
+            }
+            Printer.WriteTitle($"Escuela {Nombre} limpia");
+        }
     }
 }
