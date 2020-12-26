@@ -17,6 +17,19 @@ namespace CoreEscuela
             ImprimirCursosEscuela(engine.Escuela);
             var listaObjetos = engine.GetObjetosEscuela();
 
+            Dictionary<int, string> diccionario = new Dictionary<int, string>();
+            diccionario.Add(10,"Juank");
+            diccionario.Add(23,"Lorena Arevalo");
+
+            foreach (var keyValPair in diccionario)
+            {
+                Console.WriteLine($"Key: {keyValPair.Key} Valor: {keyValPair.Value}");
+            }
+
+            var dictmp = engine.GetDiccionarioObjetos();
+
+            engine.imprimirDiccionario(dictmp);
+
         }
 
         private static bool Predicado(Curso curobj)
