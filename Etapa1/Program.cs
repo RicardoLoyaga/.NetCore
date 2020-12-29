@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CoreEscuela.App;
 using CoreEscuela.Entidades;
 using CoreEscuela.Util;
 using static System.Console;
@@ -11,25 +12,66 @@ namespace CoreEscuela
     {
         static void Main(string[] args)
         {
+            
             var engine = new EscuelaEngine();
             engine.Inicializar();
             Printer.WriteTitle("Bienvenidos a la Escuela");
-            ImprimirCursosEscuela(engine.Escuela);
-            var listaObjetos = engine.GetObjetosEscuela();
+            
+            var reporteador = new Reporteador(engine.GetDiccionarioObjetos());
+            var evalList = reporteador.GetListaEvaluaciones();
 
-            Dictionary<int, string> diccionario = new Dictionary<int, string>();
-            diccionario.Add(10,"Juank");
-            diccionario.Add(23,"Lorena Arevalo");
+            Printer.WriteTitle("Captura de una Evaluación por Consola");
+            var nEval = new Evaluación();
+            string nombre, notaString;
+            float nota;
 
-            foreach (var keyValPair in diccionario)
+            WriteLine("Ingrese el nombre de la evaluación");
+            Printer.PresioneEnter();
+            nombre = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(nombre))
             {
-                Console.WriteLine($"Key: {keyValPair.Key} Valor: {keyValPair.Value}");
+                throw new ArgumentException("El valor del nombre no puede ser vacio");
+            }
+            else
+            {
+                nEval.Nombre = nombre.ToLower();
+                WriteLine("El nombre de la evaluación ha sido ingresado correctamente");
             }
 
-            var dictmp = engine.GetDiccionarioObjetos();
+            WriteLine("Ingrese la nota de la evaluación");
+            Printer.PresioneEnter();
+            notaString = Console.ReadLine();
 
-            engine.imprimirDiccionario(dictmp);
-
+            if (string.IsNullOrEmpty(nombre))
+            {
+                throw new ArgumentException("El valor de la nota no puede ser vacio");
+            }
+            else
+            {
+                try
+                {
+                    nEval.Nota = float.Parse(notaString);
+                    if (nEval.Nota < 0 || nEval.Nota > 5)
+                    {
+                        throw new ArgumentOutOfRangeException("La nota debe ser entre 0 y 5");
+                    }
+                    WriteLine("La nota de la evaluación ha sido ingresado correctamente");
+                }
+                catch(ArgumentOutOfRangeException arge)
+                {
+                    Printer.WriteTitle(arge.Message);
+                }
+                catch (Exception)
+                {
+                    WriteLine("La nota de la evaluación no es un número válido");
+                }
+                finally
+                {
+                    //finally siempre se va a ejecutar
+                    Printer.WriteTitle("Se ejecuto el finally");
+                }
+            }
         }
 
         private static bool Predicado(Curso curobj)
